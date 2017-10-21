@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<title>bm-欢迎登陆</title>
+
+		<!-- Bootstrap -->
+		<link href="{$smarty.const.CSS_URL}/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="/BookManage1/Public/css/admin/base.css">
+		<link rel="stylesheet" type="text/css" href="/BookManage1/Public/css/admin/login.css" />
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	</head>
+
+	<body>
+		<div class="bm_header w">
+			
+			<span class="bm_h_welcome">欢迎登陆</span>
+			
+		</div>
+		<div class="bm_content">
+
+			<div class="bm_c_tip">
+				书籍是全人类的营养品，生活里没有书籍，就好像没有阳光；智慧里没有书籍，就好像鸟儿没有翅膀。——莎士比亚
+
+			</div>
+
+			<div class="bm_c_login">
+				<div class="bm_c_bg">
+					<div class="bm_login">
+						<form>
+							<br />
+							<div class="input-group">
+								<span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-user"></span></span>
+								<input type="text" id="username" class="form-control" placeholder="请输入账号" aria-describedby="basic-addon1">
+							</div>
+							<br />
+							<div class="input-group">
+								<span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-lock">
+									
+								</span></span>
+								<input type="password" id="pwd" class="form-control" placeholder="请输入密码" aria-describedby="basic-addon1">
+							</div>
+							<br />
+							
+							<!--<div class="input-group">
+								<span class="input-group-addon" id="basic-addon1">验证码</span>
+								<input type="text" id="captcha" class="form-control" placeholder="请输入验证码" aria-describedby="basic-addon1">
+							    
+							    <span class="input-group-addon" id="basic-addon1">
+							    	
+							    	<img src="/day5401/index.php?m=admin&c=index&a=verifyImg" onclick="this.src='/day5401/index.php?m=admin&c=index&a=verifyImg&'+Math.random()"/>
+							    	
+							    </span>
+							    
+							</div>-->
+							<br />
+
+							<input type="button" value="登陆" class="btn btn-danger" id="btn_login" />
+						</form>
+
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+		
+	</body>
+
+</html>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="{$smarty.const.JS_URL}/jquery-1.11.1.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="{$smarty.const.JS_URL}/bootstrap.min.js"></script>
+		<script src="{$smarty.const.JS_URL}/layer/layer.js" type="text/javascript" charset="utf-8"></script>
